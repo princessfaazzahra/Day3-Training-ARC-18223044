@@ -1,0 +1,52 @@
+body {
+    background-color: darkgray;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#title {
+    font-size: 60px; 
+    font-family: "Garamond", sans-serif; 
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#main p {
+    font-family: "Brush Script MT", cursive;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-top: 20px;
+}
+
+#click-me {
+    background-color: rgb(200, 200, 50);;
+    font-size: 20px;
+    padding: 14px 24px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0; 
+    margin-bottom: 20px;
+}
+
+.meme-button {
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto;
+    border-radius: 8px; 
+    display: block;
+    width: 250px; 
+}
+
+#click-me:hover, .meme-button:hover {
+    opacity: 0.8;
+}
