@@ -47,6 +47,32 @@ body {
     width: 250px; 
 }
 
+#get-random-meme {
+    background-color: rgb(180, 180, 50);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#meme-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#meme-image {
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 #click-me:hover, .meme-button:hover {
     opacity: 0.8;
 }
