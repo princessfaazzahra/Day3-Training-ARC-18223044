@@ -35,3 +35,28 @@ function showMemeButtons() {
 }
 
 showMemeButtons();
+
+const memeContainer = document.getElementById("meme-container");
+const memeImage = document.getElementById("meme-image");
+
+async function getRandomMeme() {
+    try {
+        const response = await fetch("https://api.imgflip.com/get_memes");
+        const data = await response.json();
+
+        if (data.success) {
+            const memes = data.data.memes;
+            const randomMeme = memes[Math.floor(Math.random() * memes.length)];
+
+            memeImage.src = randomMeme.url;
+            memeImage.alt = randomMeme.name;
+        } else {
+            alert("Failed to fetch memes!");
+        }
+    } catch (error) {
+        console.error("Error fetching memes:", error);
+        alert("Error fetching meme, please try again!");
+    }
+}
+
+document.getElementById("get-random-meme").addEventListener("click", getRandomMeme);
